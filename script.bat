@@ -1,6 +1,6 @@
-
+@echo off
 :loop
-TIMEOUT /T 3 /NOBREAK >nul
-echo test
+set /a num=%random% %%15 + 2
+py script.py %num%
+TIMEOUT /T 86400 /NOBREAK >nul
 goto loop
-pause >nul
