@@ -8,7 +8,6 @@ os.chdir("D:\\Projects\\gitbot")
 print(os.path.dirname(os.path.realpath(__file__)))
 
 for i in range(n):
-	#call(["echo", "\"temp\"", ">", "temp.txt"])
 	open("temp.txt", 'w').close()
 	os.system("git add temp.txt")
 	os.system("git commit -m \"created file {}\"".format(i))
